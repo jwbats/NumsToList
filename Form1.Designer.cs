@@ -28,12 +28,14 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
 			this.btnNumbersToList = new System.Windows.Forms.Button();
 			this.tbOutput = new System.Windows.Forms.TextBox();
 			this.SuspendLayout();
 			// 
 			// btnNumbersToList
 			// 
+			this.btnNumbersToList.AutoSize = true;
 			this.btnNumbersToList.Location = new System.Drawing.Point(12, 12);
 			this.btnNumbersToList.Name = "btnNumbersToList";
 			this.btnNumbersToList.Size = new System.Drawing.Size(776, 114);
@@ -59,6 +61,7 @@
 			this.ClientSize = new System.Drawing.Size(800, 450);
 			this.Controls.Add(this.tbOutput);
 			this.Controls.Add(this.btnNumbersToList);
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "frmMain";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Clipboard Numbers to List";
